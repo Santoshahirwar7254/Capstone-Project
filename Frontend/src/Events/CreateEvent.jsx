@@ -26,7 +26,7 @@ const CreateEvent = ({ close }) => {
     e.preventDefault();
     try{
       const res = await axios.post(   ///create api integration
-        "http://localhost:5000/api/create",
+        "https://capstone-project-x3g1.onrender.com/api/create",
         formData
       );
       console.log("response", res.data);

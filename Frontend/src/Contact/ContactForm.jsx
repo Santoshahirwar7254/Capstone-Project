@@ -26,7 +26,7 @@ const ContactForm = () => {
 
     try {
       const res = await axios.post(     ///api integrate
-        "http://localhost:5000/api/contact",
+        "https://capstone-project-x3g1.onrender.com/api/contact",
         formData
       );
 

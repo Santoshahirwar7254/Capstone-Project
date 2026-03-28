@@ -22,7 +22,7 @@ const Login = ({ close }) => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/login",
+        "https://capstone-project-x3g1.onrender.com/api/login",
         FormData,
         {
           validateStatus: () => true   // 
