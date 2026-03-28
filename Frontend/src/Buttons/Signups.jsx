@@ -28,16 +28,21 @@ const Signups = ({ close }) => {
         }
       )
 
-      
+      //fix starting
       if (res.data.success) {
-        toast.success(res.data.message)
-        close()
+        toast.success(res.data.message || "Signup Success")
+
+        //  delay so toast show properly
+        setTimeout(() => {
+          close()
+        }, 1500)
+
       } else {
         toast.error(res.data.message)
       }
+      //  FIX END
 
     } catch (err) {
-      // fallback error handling
       if (err.response && err.response.data) {
         toast.error(err.response.data.message)
       } else {
@@ -119,4 +124,4 @@ const Signups = ({ close }) => {
   )
 }
 
-export default Signups
+export default Signups;

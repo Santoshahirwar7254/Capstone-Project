@@ -6,10 +6,18 @@ import Testaminal from './Testaminals/Testaminal'
 import Footer from './components/Footer/Footer'
 import Contacts from './Contact/Contacts'
 import Gallery from './Gallery/Gallery'
+import { ToastContainer } from "react-toastify";
+
 
 const App = () => {
   return (
     <div>
+      {/* toast container */}
+       <ToastContainer 
+         position="top-right"
+         autoClose={3000}
+         theme="dark"
+      />
          {/*  */}
          <Navbar/>       {/*  Navbar component Design + Logo  features  */}
           <Buttons/>         {/*  Buttons Login & Signup buttons  features */}
