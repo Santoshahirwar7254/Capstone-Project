@@ -14,7 +14,11 @@ const ContactRoutes = require("./src/routes/ContactRoutes");
 
 // cors middleware  
 
-app.use(cors());
+app.use(cors({
+    origin: "https://capstone-project-two.vercel.app",  ///  for security frontend origin
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}));
 
 
 
