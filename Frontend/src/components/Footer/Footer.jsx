@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* 🔹 Quick Links */}
+        {/*  Quick Links */}
         <div>
           <h2 className="text-lg font-semibold text-white mb-3">
             Quick Links
@@ -64,7 +65,7 @@ const Footer = () => {
           <div className="flex gap-4 text-xl">
             <FaFacebook className="hover:text-blue-500 cursor-pointer transition" />
             <FaInstagram className="hover:text-pink-500 cursor-pointer transition" />
-            <FaTwitter className="hover:text-blue-400 cursor-pointer transition" />
+            <FaXTwitter className="hover:text-blue-400 cursor-pointer transition"  />
           </div>
         </div>
 
