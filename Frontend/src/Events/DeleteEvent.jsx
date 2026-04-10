@@ -9,8 +9,8 @@ const DeleteEvent = ({ index, events, setEvents }) => {
     try {
       const eventId = events[index]._id;   //  get id
 
-      const res = await axios.delete(         ///deelte api integration
-        `https://capstone-project-x3g1.onrender.com/api/delete/${eventId}`
+      const res = await axios.delete(         ///delete api integration
+        `https://capstone-project-jmh2.onrender.com/api/delete/${eventId}`
       );
 
       //  backend response

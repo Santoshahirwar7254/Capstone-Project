@@ -21,7 +21,7 @@ const Signups = ({ close }) => {
 
     try {
       const res = await axios.post(
-        "https://capstone-project-x3g1.onrender.com/api/signup",
+        "https://capstone-project-jmh2.onrender.com/api/signup",
         Formdata,
         {
           validateStatus: () => true   

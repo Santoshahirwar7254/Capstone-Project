@@ -18,7 +18,7 @@ const ClerkLogin = ({ close }) => {
       const token = await getToken();
 
       const res = await axios.post(
-        "https://capstone-project-x3g1.onrender.com/api/clerk",
+        "https://capstone-project-jmh2.onrender.com/api/clerk",
         {},
         {
           headers: {

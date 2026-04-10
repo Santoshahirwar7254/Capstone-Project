@@ -19,7 +19,7 @@ const ViewEvents = ({ close }) => {
       setLoading(true);  // start loading
 
       const res = await axios.get(    //////get all events api integration
-        "https://capstone-project-x3g1.onrender.com/api/allevents"
+        "https://capstone-project-jmh2.onrender.com/api/allevents"
       );
 
       if (res.data.success) {

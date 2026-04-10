@@ -28,7 +28,7 @@ const EditEventModal = ({ close, eventData, onUpdate }) => {
 
     try {
       const res = await axios.put(      ///edit events api integration
-        `https://capstone-project-x3g1.onrender.com/api/update/${eventData._id}`,
+        `https://capstone-project-jmh2.onrender.com/api/update/${eventData._id}`,
         formData
       );
 

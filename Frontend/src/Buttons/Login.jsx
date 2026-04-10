@@ -23,7 +23,7 @@ const Login = ({ close }) => {
 
     try {
       const res = await axios.post(
-        "https://capstone-project-x3g1.onrender.com/api/login",
+        "https://capstone-project-jmh2.onrender.com/api/login",
         FormData,
         {
           validateStatus: () => true   // 
