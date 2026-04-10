@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { IoClose } from "react-icons/io5";
 import axios from "axios";
 import { toast } from "react-toastify";
+import ClerkLogin from './ClerkLogin';
 
 const Login = ({ close }) => {
   
@@ -102,7 +103,12 @@ const Login = ({ close }) => {
 
           </div>
         </form>
-
+        {/* clerk implementation */}
+           <div className='my-4 text-center text-sm text-gray-300'> 
+            OR continue with
+           </div>
+           <ClerkLogin close={close}/>
+           
         <div className="mt-4 text-center text-sm">
           <p>If you don't have an account, sign up</p>
           <button className="underline font-bold text-blue-500">
