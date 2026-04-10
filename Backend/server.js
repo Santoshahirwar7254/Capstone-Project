@@ -18,7 +18,7 @@ const ClerkRoutes = require("./src/routes/ClerkRoutes");
 // cors middleware  
 
 app.use(cors({
-    origin: "https://capstone-project-two.vercel.app",  ///  for security frontend origin
+    origin: "https://capstone-project-eight-green.vercel.app/",  ///  for security frontend origin
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
