@@ -18,18 +18,26 @@ const ClerkRoutes = require("./src/routes/ClerkRoutes");
 // cors middleware  
 
 app.use(cors({
-    origin: "https://capstone-project-eight-green.vercel.app",  ///  for security frontend origin
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: "https://capstone-project-eight-green.vercel.app", ///  for security frontend origin
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true
 }));
 
+app.options("*", cors());
+
+
 // helmet middleware for security
-app.use(helmet());
+app.use(helmet({
+    crossOriginResourcePolicy: false
+  }));
 
 
 
 // MongoDB Connection 
 connectDB();
+
+// cors policy
+
 
 // seperate APIs
 app.use("/api", signupRoutes);  //http://localhost:5000/api/signup   for  the signup
