@@ -1,8 +1,3 @@
+const { requireAuth } = require("@clerk/express");
 
-
-// clerk middleware 
-const { ClerkExpressRequireAuth } = require("@clerk/clerk-sdk-node");
-
-
-
-module.exports = ClerkExpressRequireAuth ;
+module.exports = requireAuth();

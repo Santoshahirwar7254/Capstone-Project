@@ -12,7 +12,9 @@ const LoginValidate = (req, res, next) => {
     if(error) {
         return res.status(400)
         .json({
-            message: "request failed", error
+            
+            message: "request failed", error,
+            
         })
     }
     next();
